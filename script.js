@@ -10,9 +10,9 @@ function selectImage(){
 
 function randomize(){
     const randomImage = Math.floor(Math.random()*(30-1+1)+1)
-    document.getElementById('gameBoard').style.backgroundImage = `url(./images/spelplan${randomImage}.jpg)`
+    document.getElementById('gameBoard').style.backgroundImage = `url(./images/board${randomImage}.jpg)`
     const randomImageRotation = Math.floor(Math.random()*(3+1))
     const randomImageRotationList = [0,90,180,270]
     document.getElementById('gameBoard').style.transform = `rotate(${randomImageRotationList[randomImageRotation]}deg)`
-    document.getElementById('whatImage').innerHTML = "spelplan" + randomImage + " " + randomImageRotationList[randomImageRotation] + " °"
+    document.getElementById('whatImage').innerHTML = "board" + randomImage + " " + randomImageRotationList[randomImageRotation] + " °"
 }
