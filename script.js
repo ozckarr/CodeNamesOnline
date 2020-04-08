@@ -14,5 +14,5 @@ function randomize(){
     const randomImageRotation = Math.floor(Math.random()*(3+1))
     const randomImageRotationList = [0,90,180,270]
     document.getElementById('gameBoard').style.transform = `rotate(${randomImageRotationList[randomImageRotation]}deg)`
-    document.getElementById('whatImage').innerHTML = "Spelplan" + randomImage + " " + randomImageRotationList[randomImageRotation] + " °"
+    document.getElementById('whatImage').innerHTML = "spelplan" + randomImage + " " + randomImageRotationList[randomImageRotation] + " °"
 }
